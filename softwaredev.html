@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Software Development Technical Challenge - Task One</title>
+    <link rel="stylesheet" href="softwaredev.css">
+</head>
+<body>
+
+    <div id="container" style="text-align: center; " >
+        <div id="formContainer">
+            <div id="inputContainer">
+                <div id="nameLabel">
+                    Name:
+                </div>
+                <div>
+                    <input oninput="checkName()" required id="name" class="formInput" placeholder="Enter your name" />
+                </div>
+            </div>
+            <div id="inputContainer">
+                <div id="emailLabel">
+                    Email:
+                </div>
+                <div>
+                    <input oninput="checkEmail()" required id="email" class="formInput" placeholder="Enter your email"/>
+                </div>
+            </div>    
+            <div id="inputContainer">
+                <div id="cardLabel">
+                    Card:
+                </div>
+                <div id="cardInput" >
+                    <input oninput="checkCardNumber()" required pattern="([0-9])" id="card" class="formInput" placeholder="Enter a proxy credit card number"/>
+                </div>
+            </div>  
+            <button onclick="validateForm()" id="submitButton">
+                Submit
+            </button>  
+        </div>
+    </div>
+<script src="softwaredev.js"></script> 
+</body>
+</html>
